@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS2324.3G.FraternaleEnea.menuRubrica", "AS2324.3G.FraternaleEnea.menuRubrica\AS2324.3G.FraternaleEnea.menuRubrica.csproj", "{54816FCF-841E-4E79-B7AD-7A8D424ED9BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54816FCF-841E-4E79-B7AD-7A8D424ED9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54816FCF-841E-4E79-B7AD-7A8D424ED9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54816FCF-841E-4E79-B7AD-7A8D424ED9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54816FCF-841E-4E79-B7AD-7A8D424ED9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEEB3D14-3F65-412F-B75A-6B1CB3DD3130}
+	EndGlobalSection
+EndGlobal
