@@ -15,6 +15,7 @@
             int[] simpatia = new int[100];
             string[] nickname = new string[100];
             int[] annoNascita = new int[100];
+            string[] email = new string[100];
             int i = 0;
 
 
@@ -43,21 +44,35 @@
                         {
                             simpatia[i] = Convert.ToInt32(Console.ReadLine());
 
-                        } while (simpatia[i] > 1 || simpatia[i] < 5);
+                        } while (simpatia[i] < 1 || simpatia[i] > 5);
                         
-                        Console.WriteLine($"inserisci il nikname della persona numero {i + 1}");
+                        Console.WriteLine($"inserisci il nickname della persona numero {i + 1}");
                         nickname[i] = Convert.ToString(Console.ReadLine());
                         
                         Console.WriteLine($"inserisci l'anno di nascita della persona numero {i + 1}");
                         annoNascita[i] = Convert.ToInt32(Console.ReadLine());
+
+                        Console.WriteLine($"inserisci l'email della persona numero {i + 1}");
+                        email[i] = Convert.ToString(Console.ReadLine());
 
                         i++;
 
                         break;
 
                     case 2:
-                        
+                        Console.WriteLine("benvenuto, vuoi visualizzare la tua rubrica");
 
+                        Console.WriteLine("\n cognome    nome    simpatia    nickname    anno di nascita    email");
+
+                        for (int x = 0; x < i; x++)
+                        {
+                            Console.Write(cognome[i]+"    ");
+                            Console.Write(nome[i] + "    ");
+                            Console.Write(simpatia[i] + "    ");
+                            Console.Write(nickname[i] + "    ");
+                            Console.Write(annoNascita[i] + "    ");
+                            Console.Write(email[i]);
+                        }
 
                         break;
 
