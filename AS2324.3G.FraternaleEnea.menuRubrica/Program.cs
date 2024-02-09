@@ -62,21 +62,32 @@
                     case 2:
                         Console.WriteLine("benvenuto, vuoi visualizzare la tua rubrica");
 
-                        Console.WriteLine("\n cognome    nome    simpatia    nickname    anno di nascita    email");
+                        Console.WriteLine("\ncognome    nome    simpatia    nickname    anno di nascita    email");
 
-                        for (int x = 0; x < i; x++)
+                        for (int i2 = 0; i2 < i; i2++)
                         {
-                            Console.Write(cognome[i]+"    ");
-                            Console.Write(nome[i] + "    ");
-                            Console.Write(simpatia[i] + "    ");
-                            Console.Write(nickname[i] + "    ");
-                            Console.Write(annoNascita[i] + "    ");
-                            Console.Write(email[i]);
+                            Console.Write(cognome[i2]+"    ");
+                            Console.Write(nome[i2] + "    ");
+                            Console.Write(simpatia[i2] + "    ");
+                            Console.Write(nickname[i2] + "    ");
+                            Console.Write(annoNascita[i2] + "    ");
+                            Console.Write(email[i2]);
                         }
 
                         break;
 
                     case 3:
+                        Console.WriteLine("inserisci il nickname della persona che vuoi cercare");
+                        string TNickname = Convert.ToString(Console.ReadLine());
+                        for(int i3 = 0; i3 < i; i3++)
+                        {
+                            if (TNickname == nickname[i3])
+                            {
+                                Console.WriteLine($"il nickname corrisponde alla persona con il seguente nominativo {cognome[i3]} {nome[i3]} {simpatia[i3]} {annoNascita[i3]} {email[i3]} ");
+                                
+                            }
+                        }
+
 
                         break;
 
