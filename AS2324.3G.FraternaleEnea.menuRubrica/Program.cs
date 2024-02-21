@@ -121,17 +121,27 @@
                     case 5:
                         Console.WriteLine("inserire l'iniziale del cognome che vuoi trovare");
                         string iCognome = Convert.ToString(Console.ReadLine());
-                        for(int j = 0;j < iCognome.Length; j++)
+                        for(int j = 0;j < cognome.Length; j++)
                         {
                             if (cognome[j].ToUpper().StartsWith(iCognome)==true)
                             {
-                                Console.WriteLine($"il cognome che inzia per {iCognome} e {cognome[j]}");
+                                Console.WriteLine($"il cognome che inzia per {iCognome} è {cognome[j]}");
                             }
 
                         }
                         break; 
                     
                     case 6:
+                        Console.WriteLine("inserisci la parte del cognome che desideri");
+                        string pCognome=Convert.ToString(Console.ReadLine());
+                        for( int j = 0; i < cognome.Length; j++)
+                        {
+                            if (cognome[j].ToUpper().Contains(pCognome.ToUpper()) == true)
+                            {
+                                Console.WriteLine($"il cognome che ha al suo interno {pCognome} è {cognome[j]}");
+
+                            }
+                        }
 
 
                         break;
