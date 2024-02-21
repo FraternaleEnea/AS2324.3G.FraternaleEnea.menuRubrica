@@ -116,18 +116,18 @@
                             }
                         }
 
-                        break; 
-                    
-                    case 5://sistemare il 5 case
+                        break;
+
+                    case 5:
                         Console.WriteLine("inserire l'iniziale del cognome che vuoi trovare");
-                        string iCognome = Console.ReadLine().ToUpper();
-                        if (cognome[i].StartsWith(iCognome)==true)
+                        string iCognome = Convert.ToString(Console.ReadLine());
+                        for(int j = 0;j < iCognome.Length; j++)
                         {
-                            Console.WriteLine(cognome[i]);
-                        }
-                        else
-                        {
-                            Console.WriteLine("verificare che il nome esiste o se è scritto il maniera errata");
+                            if (cognome[j].ToUpper().StartsWith(iCognome)==true)
+                            {
+                                Console.WriteLine($"il cognome che inzia per {iCognome} e {cognome[j]}");
+                            }
+
                         }
                         break; 
                     
