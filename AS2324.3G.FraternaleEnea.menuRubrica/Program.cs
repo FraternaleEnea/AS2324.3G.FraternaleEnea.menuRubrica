@@ -25,6 +25,9 @@
                 Console.WriteLine("inserire 1 per l'inserimento di un nominativo completo");
                 Console.WriteLine("inserire 2 per visualizare l'elenco di tutti i nominativi inseriti");
                 Console.WriteLine("inserire 3 per trovare un nominativo in base al suo nickname");
+                Console.WriteLine("inserire 4 per trovare tutte le persone con il nome inserito");
+                Console.WriteLine("inserire 5 per trovare i cognomi che inziano con una lettera che vuoi");
+                Console.WriteLine("inserire 6 per trovare i cognomi che contengono il dato ricercato");
                 Console.WriteLine("inserire 9 per uscire dal menu rubrica");
                 scelta = int.Parse(Console.ReadLine());
                 switch (scelta)
@@ -66,7 +69,7 @@
 
                         for (int i2 = 0; i2 < i; i2++)
                         {
-                            Console.Write(cognome[i2]+"    ");
+                            Console.Write(cognome[i2] + "    ");
                             Console.Write(nome[i2] + "    ");
                             Console.Write(simpatia[i2] + "    ");
                             Console.Write(nickname[i2] + "    ");
@@ -78,15 +81,48 @@
 
                     case 3:
                         Console.WriteLine("inserisci il nickname della persona che vuoi cercare");
-                        string TNickname = Convert.ToString(Console.ReadLine());
+                        string tNickname = Convert.ToString(Console.ReadLine());
                         for(int i3 = 0; i3 < i; i3++)
                         {
-                            if (TNickname == nickname[i3])
+                            if (tNickname == nickname[i3])
                             {
                                 Console.WriteLine($"il nickname corrisponde alla persona con il seguente nominativo {cognome[i3]} {nome[i3]} {simpatia[i3]} {annoNascita[i3]} {email[i3]} ");
                                 
                             }
+                            else
+                            {
+                                Console.WriteLine("persona non trovata");
+                                Console.WriteLine("verificare se il nickname è esistente o se è scritto in maniera errata");
+                            }
                         }
+
+
+                        break;
+
+                    case 4:
+                        Console.WriteLine("inserisci il nome che vuoi ricercare");
+                        string tNome = Console.ReadLine().ToUpper();
+                        for (int i4 = 0; i4 < i; i4++)
+                        {
+                            if (tNome == nome[i4])
+                            {
+                                Console.WriteLine($"il nome corrisponde alla persona con le seguenti informazioni {cognome[i4]} {simpatia[i4]} {simpatia[i4]} {annoNascita[i4]} {email[i4]} ");
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("verificare che il nome esiste o se è scritto il maniera errata");
+                            }
+                        }
+
+                        break; 
+                    
+                    case 5:
+
+                       
+                        break; 
+                    
+                    case 6:
 
 
                         break;
